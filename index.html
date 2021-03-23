@@ -387,20 +387,23 @@
               </li>
             </ul>
           </div>
-          <form class="footer-subscription_form" action="#">
+          <div class="footer-subscription_content">
             <h2 class="footer-subscription_title">Подпишитесь на рассылку</h2>
-            <label class="footer-subscription_label" for="">
-              <input class="footer-subscription_input" type="email" placeholder="">
-              <button class="footer-subscription_button" type="submit">Подписаться
-                <svg class="footer-subscription_icon" href="./images/icons.svg#icon-icon-send"><use></use></svg>
-              </button>
-            </label>
-          </form>
+            <form class="footer-subscription_form" action="#">
+              <label class="footer-subscription_label" for="">
+                <input class="footer-subscription_input" type="email" placeholder="">
+                <button class="footer-subscription_button" type="submit">Подписаться
+                  <svg class="footer-subscription_icon" ><use href="./images/icons.svg#icon-icon-send"></use></svg>
+                </button>
+              </label>
+            </form>
+          </div>
         </div>
       </section>
     </footer>
 
     <!--Modal window-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close_button" type="button" >
@@ -408,12 +411,43 @@
             <use  href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        
-        
+      
             <!--Forms lection-->
 
             <div class="modal-form_content">
-              
+              <form action="#" class="modal-form">
+                <h2 class="modal-form_title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="" class="modal-form-label">Имя
+                  <span>
+                    <input class="modal-form-input" type="text" name="user-name" required>
+                      <svg class="form-icon_contact form-icon_user"><use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
+                  </span>
+                </label>
+                
+                <label for="" class="modal-form-label">Телефон
+                  <input class="modal-form-input" type="tel" name="user-tel" required>
+                  <svg class="  form-icon_tel form-icon_contact"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
+                </label>
+                <label for="" class="modal-form-label">Ел.почта
+                  <input class="modal-form-input" type="email" name="user-email" id="" required>
+                  <svg class="form-icon_contact form-icon_envelope"><use href="./images/icons.svg#icon-email-black-18dp-1"></use></svg>
+                </label>
+               
+                <label class="modal-form-label" for="" class="modal-form-label">Коментарий
+                  <textarea class="modal-form_textarea" name="#" placeholder="Введите текст..." id="" cols="30" rows="10"></textarea>
+                </label>
+                <label class="form-condition_field">
+                
+                  <input class="form-checkbox" name="" for="" value="" type="checkbox">
+                
+                  Соглашаюсь с рассылкой и принимаю <a class="form-condition_link" href="#"> Условия договора</a></label>
+                <label class="submit-form_button" for="">
+                  <button class="submit-button" type="submit">Отправить</button>
+                </label>
+               
+              </form>
+
+
               <!-- <form action="" class="modal-form">
 
                 <label class="modal-form-field">
@@ -470,38 +504,7 @@
 
             </form> -->
              
-              <form action="#" class="modal-form">
-                <h2 class="modal-form_title">Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="" class="modal-form-label">Имя
-                  <span>
-                    <input class="modal-form-input" type="text" name="user-name" required>
-                      <svg class="form-icon_contact form-icon_user"><use href="./images/icons.svg#icon-person-black-18dp-1"></use></svg>
-                  </span>
-                </label>
-                
-                <label for="" class="modal-form-label">Телефон
-                  <input class="modal-form-input" type="tel" name="user-tel" required>
-                  <svg class="  form-icon_tel form-icon_contact"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use></svg>
-                </label>
-                <label for="" class="modal-form-label">Ел.почта
-                  <input class="modal-form-input" type="email" name="user-email" id="" required>
-                  <svg class="form-icon_contact form-icon_envelope"><use href="./images/icons.svg#icon-email-black-18dp-1"></use></svg>
-                </label>
-               
-                <label class="modal-form-label" for="" class="modal-form-label">Коментарий
-                  <textarea class="modal-form_textarea" name="#" placeholder="Введите текст" id="" cols="30" rows="10"></textarea>
-                </label>
-                <label class="form-condition_field">
-                
-                  <input class="form-checkbox" name="" for="" value="" type="checkbox">
-                
-                  Соглашаюсь с рассылкой и принимаю <a class="form-condition_link" href="#"> Условия договора</a></label>
-                <label class="submit-form_button" for="">
-                  <button class="submit-button" type="submit">Отправить</button>
-                </label>
-               
-              </form>
-
+              
 
 
   <!--http://prntscr.com/10tcnus

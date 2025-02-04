@@ -243,12 +243,11 @@ ul {
   display: flex;
   flex-direction: column;
   height: 252px;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--primary-bacground-color);
 }
-
-.footer-style {
-  padding-left: 150px;
+div > .logo-link > span {
+  font-size: 18px;
 }
 
 .logo-white {
@@ -474,6 +473,7 @@ ul {
 .footer-style {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 .footer-social {
   display: flex;
@@ -743,9 +743,7 @@ ul {
   min-height: 150px;
   max-width: 410px;
   min-width: 410px;
-  
 }
-
 
 .form-condition_field {
   display: flex;
@@ -800,4 +798,73 @@ ul {
   fill: var(--accent-color);
   cursor: text;
 }
+/* -------------------- */
+
+/* Footer subscription form */
+.footer-subscription_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.footer-subscription_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  color: var(--primary-white-color);
+  margin: 0;
+}
+.footer-subscription_form {
+  display: flex;
+  margin-top: 15px;
+}
+.footer-subscription_label {
+  display: flex;
+  height: 40px;
+}
+.footer-subscription_input {
+  padding-left: 10px;
+  width: 264px;
+  background-color: var(--primary-bacground-color);
+  border: 1px solid var(--primary-white-color);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--primary-white-color);
+}
+.footer-subscription_button {
+  width: 165px;
+  color: var(--primary-white-color);
+  background: var(--accent-color);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.09em;
+  justify-content: space-evenly;
+  margin-left: 25px;
+}
+.footer-subscription_button:hover {
+  background: var(--accent-color);
+}
+.footer-subscription_icon {
+  height: 24px;
+  width: 50px;
+  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
+}
+
 /* -------------------- */
